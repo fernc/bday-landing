@@ -1,0 +1,32 @@
+h1 {
+	text-align: center;
+	color: Yellow;
+	font-weight: 700;
+	font-size: 4em;
+}
+
+
+/* First Slide */
+
+#section0 {
+	background: url("../images/Elaine 70.jpg") no-repeat fixed center;
+	background-size: cover;
+}
+
+
+/* Second Slide */
+#section1 #slide1 {
+	background: url("../images/Elaine 19.jpg") no-repeat;
+	background-size: cover;
+}
+
+#section1 #slide2 {
+	background: url("../images/Elaine 190.jpg") no-repeat;
+	background-size: cover;
+}
+
+#section2 { 
+	background: url("../images/Elaine 375.jpg") no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+}

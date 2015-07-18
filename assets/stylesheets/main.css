@@ -1,32 +1,165 @@
-h1 {
+.intro h1 {
 	text-align: center;
 	color: Yellow;
 	font-weight: 700;
 	font-size: 4em;
+	font-family: 'Pacifico', cursive;
 }
 
 
 /* First Slide */
 
 #section0 {
-	background: url("../images/Elaine 70.jpg") no-repeat fixed center;
+	background: url("../images/Elaine 375.jpg") no-repeat top center fixed;
 	background-size: cover;
+	opacity: 0.4;
+}
+
+#section0 h1 {
+	color: black;
+	transform: rotate(-8deg);
 }
 
 
 /* Second Slide */
-#section1 #slide1 {
-	background: url("../images/Elaine 19.jpg") no-repeat;
-	background-size: cover;
+#section1 h1 {
+	color: #C0FCC0;
 }
 
-#section1 #slide2 {
-	background: url("../images/Elaine 190.jpg") no-repeat;
-	background-size: cover;
+#section1 h2 {
+	margin-top: 10px;
 }
+
+#map-canvas {
+	display: none;
+}
+
+.address {
+	text-align: center;
+	font-size: 1.8em;
+}
+
+.location-head {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.cats {
+	text-align: center;
+}
+
+
+
+/* Section two intro */
 
 #section2 { 
-	background: url("../images/Elaine 375.jpg") no-repeat;
-	background-size: cover;
-	opacity: 0.5;
+	background: url("../images/Elaine 70.jpg") no-repeat center center;
+	background-size: cover;;
+}
+
+
+button.btn.btn-primary {
+	font-weight: 700;
+	font-size: 1.4em;
+	padding: 5px 15px;
+	letter-spacing: 2px;
+	background-color: #0B7862;
+	border: 2px solid white;
+	border-radius: 6px;
+	margin-top: 40px;
+	transition: all 0.3s;
+}
+
+
+button.btn.btn-primary:hover {
+	color: #0B7862;
+	border: 2px solid #0B7862;
+	background-color: white;
+	transition: all 0.3s;
+}
+
+/* Itinerary  */
+
+.sec4-head {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+#section3 .sec4-head {
+	font-size: 2rem;
+}
+
+.col-md-4 h1 {
+	font-size: 1.3em;
+	color: white;
+}
+
+.iten-content {
+	margin-top: 10px;
+}
+
+.iten-content p {
+	margin-bottom: 5px;
+}
+
+#section3 .col-md-4 {
+	font-size: 1rem;
+}
+
+.col-md-4:nth-child(2) {
+	padding-top: 5%;
+}
+
+
+/* Responsive */
+
+
+@media (min-width: 768px) {
+	
+	#map-canvas {
+		display: block;
+		height: 55vh;
+		width: 50%;
+		margin: 0 auto;
+		clear: both;
+		float: left;
+	}
+	
+	.cats {
+		height: 60vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.location-head {
+		position: relative;
+		margin-top: 0;
+	}
+	button.btn.btn-primary {
+		margin-top: 0;
+	}
+
+	
+	#section0 h1 {
+		font-size: 5.5em;
+	}
+
+	
+	#section3 .col-md-4 {
+		font-size: 2.3rem;
+	}
+	#section3 .col-md-4 h1 {
+		font-size: 4rem;
+	}
+	#section3 .sec4-head {
+		font-size: 4em;
+	}
+	.col-md-4:nth-child(2) {
+		padding-top: 0;
+	}
 }

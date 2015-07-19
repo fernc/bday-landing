@@ -12,7 +12,16 @@
 #section0 {
 	background: url("../images/Elaine 375.jpg") no-repeat top center fixed;
 	background-size: cover;
-	opacity: 0.4;
+	opacity: 0.7;
+	animation: colorhero 4s ease-out 1;
+}
+
+@keyframes colorhero {
+	25% { filter: saturate(0.1); }
+	50% { filter: saturate(0.3); }
+	74% { filter: saturate(0.6); }
+	89% { filter: saturate(0.8); }
+	100% { filter: saturate(1); }
 }
 
 #section0 h1 {
@@ -114,6 +123,23 @@ button.btn.btn-primary:hover {
 	padding-top: 5%;
 }
 
+/* Gallery slides */
+
+#section4 #slide1 {
+	background: url('../images/Elaine 77.jpg') no-repeat scroll 79% center / cover;
+}
+
+#section4 #slide2 {
+	background: url('../images/Elaine 190.jpg') no-repeat scroll 79% center / cover;
+}
+
+#section4 #slide3 {
+	background: url('../images/Elaine 69.jpg') no-repeat scroll center center / cover;
+}
+
+.fp-controlArrow {
+	top: 75%;
+}
 
 /* Responsive */
 
